@@ -1,0 +1,289 @@
+<prefabs>
+	<game_entity name="homestead_grain_farm" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_empire_street_tent_01"/>
+		<components>
+			<meta_mesh_component name="empire_street_tent_01"/>
+		</components>
+		<children>
+			<game_entity name="arabian_stone_b" old_prefab_name="">
+				<transform position="0.551, -0.275, -0.030" rotation_euler="0.048, -0.097, 1.111"/>
+				<physics shape="bo_arabian_stone_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="arabian_stone_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_grain" old_prefab_name="">
+				<transform position="-1.442, 0.509, 0.055" rotation_euler="-0.333, 0.060, -2.576"/>
+				<physics shape="bo_merchandise_grain" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="merchandise_grain"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_production_wheat_mesh_a" old_prefab_name="">
+				<transform position="0.944, 4.884, -0.108" rotation_euler="0.004, 0.016, 1.820"/>
+				<components>
+					<meta_mesh_component name="wheat_group_summer_4x"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_npc_villager_working_while_stand" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_homestead_npc"/>
+				</tags>
+				<transform position="-0.441, 1.165, 0.127" rotation_euler="-0.087, -0.066, 2.491"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_npc_villager_working_while_stand"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merchandise_grain" old_prefab_name="">
+				<transform position="-0.603, 0.254, 0.028" rotation_euler="-0.061, -0.090, 2.162"/>
+				<physics shape="bo_merchandise_grain" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="merchandise_grain"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_bowl_b" old_prefab_name="">
+				<transform position="1.111, 0.238, 0.015" rotation_euler="0.046, -0.098, 1.132"/>
+				<components>
+					<meta_mesh_component name="kitchen_bowl_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_bowl_b" old_prefab_name="">
+				<transform position="1.098, 0.233, 0.064" rotation_euler="0.072, -0.106, 1.821"/>
+				<components>
+					<meta_mesh_component name="kitchen_bowl_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_bowl_b" old_prefab_name="">
+				<transform position="1.091, 0.230, 0.110" rotation_euler="-0.077, -0.120, -2.597"/>
+				<components>
+					<meta_mesh_component name="kitchen_bowl_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_production_wheat_mesh_a" old_prefab_name="">
+				<transform position="-3.456, 4.481, -0.101" rotation_euler="0.008, 0.014, 2.133"/>
+				<components>
+					<meta_mesh_component name="wheat_group_summer_4x"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_npc_farmer_bush_cutting" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_homestead_npc"/>
+				</tags>
+				<transform position="-1.248, 3.248, 0.354" rotation_euler="0.094, -0.054, 0.522"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_npc_farmer_bush_cutting"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="farmer_sickle"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="true"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="map_icons_production_wheat_mesh_a" old_prefab_name="">
+				<transform position="-1.834, 4.979, -0.109" rotation_euler="0.002, 0.016, 1.688"/>
+				<components>
+					<meta_mesh_component name="wheat_group_summer_4x"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_production_wheat_mesh_a" old_prefab_name="">
+				<transform position="0.389, 4.812, -0.107" rotation_euler="-0.007, 0.015, 1.151"/>
+				<components>
+					<meta_mesh_component name="wheat_group_summer_4x"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_bowl_b" old_prefab_name="">
+				<transform position="1.111, 0.228, 0.157" rotation_euler="0.037, 0.035, -2.140"/>
+				<components>
+					<meta_mesh_component name="kitchen_bowl_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_npc_farmer_bush_cutting" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_homestead_npc"/>
+				</tags>
+				<transform position="0.251, 2.682, 0.292" rotation_euler="0.104, 0.032, -0.303"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_npc_farmer_bush_cutting"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="farmer_sickle"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="true"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="map_icons_production_wheat_mesh_a" old_prefab_name="">
+				<transform position="-3.664, 4.382, -0.099" rotation_euler="0.014, 0.009, 2.591"/>
+				<components>
+					<meta_mesh_component name="wheat_group_summer_4x"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_bowl_c" old_prefab_name="">
+				<transform position="0.805, 0.132, 0.014" rotation_euler="0.048, -0.097, 1.111"/>
+				<components>
+					<meta_mesh_component name="kitchen_bowl_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_hay_cart_b" old_prefab_name="">
+				<transform position="2.853, 0.593, 0.000" rotation_euler="0.000, 0.000, -2.823"/>
+				<physics shape="bo_bd_hay_cart_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_hay_cart_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

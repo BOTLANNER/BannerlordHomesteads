@@ -1,0 +1,346 @@
+<prefabs>
+	<game_entity name="homestead_butchers_tent" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tents_pict_c"/>
+		<components>
+			<meta_mesh_component name="tents_pict_c"/>
+		</components>
+		<children>
+			<game_entity name="merchandise_meat" old_prefab_name="">
+				<transform position="-2.385, 2.058, 1.503" rotation_euler="0.000, 0.000, -2.215" scale="0.548, 0.548, 0.491"/>
+				<components>
+					<meta_mesh_component name="merchandise_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_meat" old_prefab_name="">
+				<transform position="-2.010, 2.087, 1.443" rotation_euler="0.000, 0.000, 1.636" scale="0.545, 0.545, 0.545"/>
+				<components>
+					<meta_mesh_component name="merchandise_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_hook" old_prefab_name="">
+				<transform position="-2.740, 1.969, 2.021" rotation_euler="-0.025, 0.002, -2.558" scale="0.373, 0.373, 0.335"/>
+				<components>
+					<meta_mesh_component name="kitchen_hook"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="-1.879, 2.112, -0.022" rotation_euler="0.000, 0.000, 0.139" scale="0.286, 0.280, 0.402"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="-2.412, 2.026, 1.998" rotation_euler="0.243, 0.004, 0.167" scale="0.110, 0.371, 0.371"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_hook" old_prefab_name="">
+				<transform position="-2.020, 2.101, 2.023" rotation_euler="-0.025, 0.000, 2.925" scale="0.373, 0.373, 0.373"/>
+				<components>
+					<meta_mesh_component name="kitchen_hook"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_e" old_prefab_name="">
+				<transform position="-0.555, -2.353, 0.000" rotation_euler="0.000, 0.000, -2.849"/>
+				<physics shape="bo_bd_table_e" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_npc_villager_working_while_stand" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_homestead_npc"/>
+				</tags>
+				<transform position="-2.229, 1.633, 0.000" rotation_euler="0.000, 0.000, 0.262"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_npc_villager_working_while_stand"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="-2.939, 1.943, -0.022" rotation_euler="0.000, 0.000, 0.139" scale="0.286, 0.280, 0.402"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_c" old_prefab_name="">
+				<transform position="0.075, 1.237, 0.000" rotation_euler="0.000, 0.000, -0.816"/>
+				<physics shape="bo_bd_table_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_meat" old_prefab_name="">
+				<transform position="-2.762, 1.995, 1.536" rotation_euler="0.000, 0.000, -0.784" scale="0.548, 0.548, 0.491"/>
+				<components>
+					<meta_mesh_component name="merchandise_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_hook" old_prefab_name="">
+				<transform position="-2.403, 2.028, 2.021" rotation_euler="-0.025, -0.001, 2.480" scale="0.373, 0.373, 0.335"/>
+				<components>
+					<meta_mesh_component name="kitchen_hook"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="0.466, -0.966, 0.000" rotation_euler="0.000, 0.000, -1.742"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/ambient/detail/fire/fire_small"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="20.000000"/>
+							<variable name="Overrided Min Distance" value="1.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merchandise_meat" old_prefab_name="">
+				<transform position="0.481, -1.165, 1.756" rotation_euler="-0.023, -3.125, 1.496" scale="0.325, 0.325, 0.325"/>
+				<components>
+					<meta_mesh_component name="merchandise_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_hides_b" old_prefab_name="">
+				<transform position="0.701, 0.490, 0.798" rotation_euler="0.000, 0.000, -1.742"/>
+				<physics shape="bo_merchandise_hides_b"/>
+				<components>
+					<meta_mesh_component name="merchandise_hides_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_hides_a" old_prefab_name="">
+				<transform position="-0.792, 2.028, 0.797" rotation_euler="0.000, 0.000, -2.080"/>
+				<physics shape="bo_merchandise_hides_a"/>
+				<components>
+					<meta_mesh_component name="merchandise_hides_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="_to_carry_merchandise_hides_b" old_prefab_name="">
+				<transform position="-0.143, 1.308, 0.797" rotation_euler="0.000, 0.000, 2.922" scale="0.800, 0.800, 0.800"/>
+				<physics shape="bo_merchandise_hides_b"/>
+				<components>
+					<meta_mesh_component name="merchandise_hides_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_hook" old_prefab_name="">
+				<transform position="0.516, -0.693, 2.589" rotation_euler="0.000, 0.000, -1.618"/>
+				<components>
+					<meta_mesh_component name="kitchen_hook"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_meat" old_prefab_name="">
+				<transform position="0.448, -0.742, 1.785" rotation_euler="0.023, 3.125, -1.660" scale="0.413, 0.413, 0.413"/>
+				<components>
+					<meta_mesh_component name="merchandise_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="mat_fur_a" old_prefab_name="">
+				<transform position="-1.073, -0.370, 0.000" rotation_euler="0.000, 0.000, -0.937" scale="0.706, 0.706, 0.706"/>
+				<physics override_material="straw"/>
+				<components>
+					<meta_mesh_component name="mat_fur_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_npc_villager_working_while_stand_2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_homestead_npc"/>
+				</tags>
+				<transform position="-0.722, -1.727, 0.000" rotation_euler="0.000, 0.000, -2.849"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_npc_villager_working_while_stand_2"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="kitchen_cutting_food_meat" old_prefab_name="">
+				<transform position="-0.746, -2.634, 0.797" rotation_euler="0.000, 0.000, -0.988"/>
+				<components>
+					<meta_mesh_component name="kitchen_cutting_food_meat"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_cutting_food_meat_b" old_prefab_name="">
+				<transform position="-0.361, -2.423, 0.796" rotation_euler="0.000, 0.000, -0.005"/>
+				<components>
+					<meta_mesh_component name="kitchen_cutting_food_meat_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_cutting_food_meat_b" old_prefab_name="">
+				<transform position="-0.084, -2.099, 0.797" rotation_euler="0.000, 0.000, -1.689"/>
+				<components>
+					<meta_mesh_component name="kitchen_cutting_food_meat_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_hook" old_prefab_name="">
+				<transform position="0.546, -1.179, 2.515" rotation_euler="0.000, 0.000, -1.618"/>
+				<components>
+					<meta_mesh_component name="kitchen_hook"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

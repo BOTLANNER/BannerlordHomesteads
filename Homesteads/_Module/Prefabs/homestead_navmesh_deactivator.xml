@@ -1,0 +1,22 @@
+<prefabs>
+	<game_entity name="homestead_navmesh_deactivator" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="navigation_mesh_deactivator"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="pandora">
+				<mesh name="pandora" argument="1.000, 1.000, 0.000, 0.000"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="NavigationMeshDeactivator">
+				<variables>
+					<variable name="DisableFaceWithId" value="0"/>
+					<variable name="DisableFaceWithIdForAnimals" value="-1"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

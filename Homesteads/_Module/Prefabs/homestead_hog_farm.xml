@@ -1,0 +1,195 @@
+<prefabs>
+	<game_entity name="homestead_hog_farm" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_barn_fence_d" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="barn_fence_d"/>
+		</components>
+		<children>
+			<game_entity name="fence_empire_a" old_prefab_name="">
+				<transform position="-4.700, -6.402, 0.000" rotation_euler="0.000, 0.000, 2.896"/>
+				<physics shape="bo_fence_empire_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_hog" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_hog"/>
+				</tags>
+				<transform position="-0.665, -4.707, 0.000" rotation_euler="0.000, 0.000, 1.352"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_yellow"/>
+				</components>
+				<scripts>
+					<script name="AnimalSpawnSettings">
+						<variables>
+							<variable name="DisableWandering" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="sp_npc_examine_stall" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+					<tag name="disable_at_night"/>
+				</tags>
+				<transform position="2.740, -6.171, 0.000" rotation_euler="0.000, 0.000, 1.010"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_citizen_stall"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="fence_empire_a" old_prefab_name="">
+				<transform position="2.810, -4.754, 0.000" rotation_euler="0.000, 0.000, -1.398"/>
+				<physics shape="bo_fence_empire_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_hog" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_hog"/>
+				</tags>
+				<transform position="1.064, -2.272, 0.000" rotation_euler="0.000, 0.000, 0.582"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_yellow"/>
+				</components>
+				<scripts>
+					<script name="AnimalSpawnSettings">
+						<variables>
+							<variable name="DisableWandering" value="true"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="fence_empire_a" old_prefab_name="">
+				<transform position="-2.249, -0.010, 0.000" rotation_euler="0.000, 0.000, 0.974"/>
+				<physics shape="bo_fence_empire_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_hog" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_hog"/>
+				</tags>
+				<transform position="-2.226, -2.168, 0.000" rotation_euler="0.000, 0.000, -1.515"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_yellow"/>
+				</components>
+				<scripts>
+					<script name="AnimalSpawnSettings">
+						<variables>
+							<variable name="DisableWandering" value="true"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="fence_empire_b" old_prefab_name="">
+				<transform position="2.078, -6.427, 0.000" rotation_euler="0.000, 0.000, -1.995"/>
+				<physics shape="bo_fence_empire_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_hog" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_hog"/>
+				</tags>
+				<transform position="1.680, -5.095, 0.000" rotation_euler="0.000, 0.000, 2.418"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_yellow"/>
+				</components>
+				<scripts>
+					<script name="AnimalSpawnSettings">
+						<variables>
+							<variable name="DisableWandering" value="true"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="fence_empire_b" old_prefab_name="">
+				<transform position="0.828, -7.745, 0.000" rotation_euler="0.000, 0.000, -2.342"/>
+				<physics shape="bo_fence_empire_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="fence_empire_b" old_prefab_name="">
+				<transform position="-5.400, -4.748, 0.000" rotation_euler="0.000, 0.000, 1.957"/>
+				<physics shape="bo_fence_empire_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="fence_empire_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+
